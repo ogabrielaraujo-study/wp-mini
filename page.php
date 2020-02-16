@@ -1,14 +1,20 @@
-<?php get_header();
+<?php 
 
-if ( have_posts() ) {
+  get_header();
 
-  while ( have_posts() ) {
-    the_post();
+  echo '<main>';
+  if ( have_posts() ) {
 
-    the_title( '<h1 class="entry-title">', '</h1>' );
+    while ( have_posts() ) {
+      the_post();
 
-    the_content();
+      the_title( '<h1 class="entry-title">', '</h1>' );
+
+      echo '<div class="content">' . get_the_content() . '</div>';
+    }
   }
-}
-
-get_footer();
+  echo '</main>';
+  
+  get_footer();
+  
+?>
