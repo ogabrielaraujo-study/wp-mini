@@ -1,13 +1,25 @@
 /*
 Theme Name: WP Mini
-Theme URI: https://ogabrielaraujo.com.br
 Author: Gabriel Araujo
 Author URI: https://ogabrielaraujo.com.br
 Description: Minimal Theme for WordPress
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: mini
+Text Domain: wp-mini
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1;
+  text-decoration: none;
+  list-style: none;
+}
